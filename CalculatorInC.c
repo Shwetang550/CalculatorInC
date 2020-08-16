@@ -17,6 +17,7 @@ int main()
     scanf("%d",&b);                        //Inputs 2nd number.
 
     printf("Operation to Perform (+,-,/,%,*) : ");
+    printf("choose");
     scanf("%c",&op);                       //Inputs calculation to be performed on the numbers 'a' and 'b'
 
     switch(op)
