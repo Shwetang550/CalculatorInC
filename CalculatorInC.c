@@ -6,7 +6,10 @@ void addition(int a, int b)               //You can take this function as a refe
 {                                         //create functions for other operations :)
     printf("Sum = %d", a+b);
 }
-
+void subtration(int a,int b)
+{
+    printf("sum = %d",a-b);
+}
 int main()
 {
     int a,b;
