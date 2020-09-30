@@ -8,7 +8,7 @@ void addition(int a, int b)               //You can take this function as a refe
 }
 void subtration(int a,int b)
 {
-    printf("sum = %d",a-b);
+    printf("%d-%d = %d",a,b,a-b);
 }
 void multiplication(int a,int b)
 {
