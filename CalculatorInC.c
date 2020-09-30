@@ -10,6 +10,10 @@ void subtration(int a,int b)
 {
     printf("sum = %d",a-b);
 }
+void multiplication(int a,int b)
+{
+    printf("%d×%d=%d",a,b,a*b);
+}
 int main()
 {
     int a,b;
