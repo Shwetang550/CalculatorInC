@@ -26,6 +26,41 @@ input {
     outline: none;
 }
 
+button {
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: green;
+    color: yellow;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+ol {
+    margin-top: 30px;
+}
+
+ol li {
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-transform: capitalize;
+}
+
 .main_div {
     width: 100%;
     height: 100vh;
