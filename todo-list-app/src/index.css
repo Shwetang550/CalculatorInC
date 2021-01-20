@@ -101,7 +101,7 @@ ol li {
 }
 
 .todo_style .fa-times:hover {
-    background-color: red;
+    background-color: green;
 }
 
 @media (max-width: 768px) {

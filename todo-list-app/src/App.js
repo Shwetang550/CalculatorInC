@@ -16,6 +16,11 @@ const App = () => {
     setInputList("");
   };
 
+  const deleteItem = (i) => { 
+    const freshItems = items.filter((item,index) => index !== i);
+    setItems(freshItems);
+   };
+
   return ( 
     <>
       <div className="main_div">
@@ -29,7 +34,7 @@ const App = () => {
           <ol>
             {
               items.map((item,index) => {
-                return <ListItems text={item} key={index}/>;
+                return <ListItems key={index} id={index} text={item} onDelete={deleteItem}/>;
               })
             }
           </ol>
