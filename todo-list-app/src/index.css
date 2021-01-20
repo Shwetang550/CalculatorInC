@@ -79,3 +79,10 @@ ol li {
     box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
+
+.todo_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
