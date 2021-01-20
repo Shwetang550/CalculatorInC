@@ -86,3 +86,16 @@ ol li {
     justify-content: left;
     align-items: center;
 }
+
+.todo_style .fa-times {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
