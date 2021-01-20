@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ListItems from './Components/listItems';
 
 const App = () => {
   let [inputList, setInputList] = useState("");
@@ -27,8 +28,8 @@ const App = () => {
           
           <ol>
             {
-              items.map((item) => {
-                return <li> {item} </li>;
+              items.map((item,index) => {
+                return <ListItems text={item} key={index}/>;
               })
             }
           </ol>
