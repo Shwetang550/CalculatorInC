@@ -99,3 +99,7 @@ ol li {
     color: white;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
+
+.todo_style .fa-times:hover {
+    background-color: red;
+}
