@@ -11,7 +11,8 @@ const App = () => {
   const addItem = () => { 
     setItems((prevItems) => {
       return [...prevItems, inputList];
-    })
+    });
+    setInputList("");
   };
 
   return ( 
@@ -21,7 +22,7 @@ const App = () => {
           <br />
           <h1> ToDo List App</h1>
           <br />
-          <input type="text" placeholder="Add Items" onChange={inputItem} />
+          <input type="text" placeholder="Add Items" value={inputList} onChange={inputItem} />
           <button onClick={addItem}> + </button>
           
           <ol>
