@@ -5,7 +5,7 @@ const ListItems = (props) => {
     
     return (
         <>
-            <div className="todo_style" style={{marginLeft: "1rem"}}>
+            <div className="todo_style">
                 <i className="fa fa-times" aria-hidden="true" />
                 <li> {text} </li>
             </div>
