@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Potta+One&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,6 +13,7 @@ h1 {
     padding: 6px 0 2px 0;
     margin-bottom: 10px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    font-family: 'Potta One', cursive;
 }
 
 input {
@@ -24,6 +27,7 @@ input {
     width: 60%;
     border-bottom: 2px solid #8fbaf3;
     outline: none;
+    font-family: 'Indie Flower', cursive;
 }
 
 button {
@@ -52,13 +56,14 @@ ol {
 ol li {
     padding-left: 0px;
     text-align: left;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 23px;
     min-height: 40px;
     display: flex;
     align-items: center;
-    color: #0245a3;
+    color: #00acc1;
     text-transform: capitalize;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 .main_div {
