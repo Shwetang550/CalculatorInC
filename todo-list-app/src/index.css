@@ -5,9 +5,9 @@
 }
 
 h1 {
-    color: white;
+    color: #ffffff;
     background: transparent;
-    background-color: blue;
+    background-color: #8fbaf3;
     padding: 6px 0 2px 0;
     margin-bottom: 10px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
@@ -22,7 +22,7 @@ input {
     font-size: 20px;
     font-weight: 500;
     width: 60%;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #8fbaf3;
     outline: none;
 }
 
@@ -31,8 +31,8 @@ button {
     width: 40px;
     border-radius: 50%;
     border-color: transparent;
-    background-color: green;
-    color: yellow;
+    background-color: #8fbaf3;
+    color: #ffffff;
     font-size: 40px;
     border: none;
     outline: none;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-    background-color: black;
+    background-color: #50c878;
 }
 
 ol {
@@ -57,14 +57,14 @@ ol li {
     min-height: 40px;
     display: flex;
     align-items: center;
-    color: black;
+    color: #0245a3;
     text-transform: capitalize;
 }
 
 .main_div {
     width: 100%;
     height: 100vh;
-    background: blue;
+    background: #8fbaf3;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -73,9 +73,9 @@ ol li {
 }
 
 .center_div {
-    width: 25%;
+    width: 27%;
     height: 80vh;
-    background-color: red;
+    background-color: #ffffff;
     box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
@@ -88,20 +88,21 @@ ol li {
 }
 
 .todo_style .fa-times {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #8fbaf3;
     border-radius: 50%;
     margin: 0 15px 0 35px;
     color: white;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .todo_style .fa-times:hover {
-    background-color: green;
+    background-color: #f5564e;
 }
 
 @media (max-width: 768px) {
@@ -120,7 +121,7 @@ ol li {
         margin-left: 5px;
         min-height: 40px;
         width: 40px;
-        color: #fff;
+        color: #ffffff;
         font-size: 30px;
     }
 }
