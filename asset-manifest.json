@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/oDo-list-app/static/css/main.94929805.chunk.css",
+    "main.js": "/oDo-list-app/static/js/main.82dc638c.chunk.js",
+    "main.js.map": "/oDo-list-app/static/js/main.82dc638c.chunk.js.map",
+    "runtime-main.js": "/oDo-list-app/static/js/runtime-main.81fa15e1.js",
+    "runtime-main.js.map": "/oDo-list-app/static/js/runtime-main.81fa15e1.js.map",
+    "static/js/2.13beaed7.chunk.js": "/oDo-list-app/static/js/2.13beaed7.chunk.js",
+    "static/js/2.13beaed7.chunk.js.map": "/oDo-list-app/static/js/2.13beaed7.chunk.js.map",
+    "index.html": "/oDo-list-app/index.html",
+    "static/css/main.94929805.chunk.css.map": "/oDo-list-app/static/css/main.94929805.chunk.css.map",
+    "static/js/2.13beaed7.chunk.js.LICENSE.txt": "/oDo-list-app/static/js/2.13beaed7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81fa15e1.js",
+    "static/js/2.13beaed7.chunk.js",
+    "static/css/main.94929805.chunk.css",
+    "static/js/main.82dc638c.chunk.js"
+  ]
+}
