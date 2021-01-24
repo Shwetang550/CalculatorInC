@@ -12,7 +12,7 @@ const ToDoMaterialUI = () => {
                     <br />
 
                     <input type="text" placeholder="Add items" />
-                    <Button>
+                    <Button className="materialBtn"> 
                         <AddIcon fontSize="large"/>
                     </Button>
                 </div>
