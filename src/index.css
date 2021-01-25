@@ -138,6 +138,13 @@ ol li {
     padding: 5px;
     color: #ffffff;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.todo_style .deleteIcon:hover {
+    background-color: transparent;
+    color: crimson;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
