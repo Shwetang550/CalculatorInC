@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
+import ItemList from './ToDoListMatUI';
 
 const ToDoMaterialUI = () => {
     let [item, setItem] = useState("");
@@ -33,8 +34,8 @@ const ToDoMaterialUI = () => {
                     <br />
                     <ol>
                         {
-                            itemList.map((i) => {
-                            return <li>{i}</li>;
+                            itemList.map((i,index) => {
+                            return <ItemList value={i} key={index} />;
                             })
                         }
                     </ol>
