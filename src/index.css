@@ -126,6 +126,20 @@ ol li {
     background: white !important;
 }
 
+.todo_style .deleteIcon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fbaf3;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    padding: 5px;
+    color: #ffffff;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 768px) {
     .center_div {
         width: 55%;
