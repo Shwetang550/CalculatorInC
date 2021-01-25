@@ -4,9 +4,17 @@ import AddIcon from '@material-ui/icons/Add';
 
 const ToDoMaterialUI = () => {
     let [item, setItem] = useState("");
+    let [itemList, setItemList] = useState([]);
 
     const handleInput = (event) => {
         setItem(event.target.value);
+    }
+
+    const handleButton = () => {
+        setItemList((prev) => {
+            return [...prev, item];
+        });
+        setItem(" ");
     }
 
     return ( 
@@ -17,14 +25,18 @@ const ToDoMaterialUI = () => {
                     <h1>ToDo List</h1>
                     <br />
 
-                    <input type="text" placeholder="Add items" onChange={handleInput} />
-                    <Button className="materialBtn"> 
+                    <input type="text" value={item} placeholder="Add items" onChange={handleInput} />
+                    <Button className="materialBtn" onClick={handleButton}> 
                         <AddIcon fontSize="large"/>
                     </Button>
 
                     <br />
                     <ol>
-                        <li>{item}</li>
+                        {
+                            itemList.map((i) => {
+                            return <li>{i}</li>;
+                            })
+                        }
                     </ol>
                     <br />
                 </div>
