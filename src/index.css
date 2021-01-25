@@ -121,6 +121,11 @@ ol li {
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
+.materialBtn:hover {
+    color: #8fbaf3 !important;
+    background: white !important;
+}
+
 @media (max-width: 768px) {
     .center_div {
         width: 55%;
