@@ -15,7 +15,7 @@ const ToDoMaterialUI = () => {
         event.preventDefault();
 
         setItemList((prev) => [...prev, item]);
-        setItem(" ");
+        setItem("");
     }
 
     return ( 
@@ -29,7 +29,7 @@ const ToDoMaterialUI = () => {
                     <form onSubmit={handleButton}>
                         <input type="text" value={item} placeholder="Add items" onChange={handleInput} />
                         
-                        <Button className="materialBtn" type="submit"> 
+                        <Button className="materialBtn" type="submit" disabled={!item}> 
                             <AddIcon fontSize="large" />
                         </Button>
                     </form>
