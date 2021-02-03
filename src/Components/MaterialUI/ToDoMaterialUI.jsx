@@ -1,7 +1,8 @@
-import React,{ useState } from 'react';
+import React,{ useEffect, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import ItemList from './ToDoListMatUI';
+import db from '../../firebase';
 
 const ToDoMaterialUI = () => {
     let [item, setItem] = useState("");
@@ -14,9 +15,19 @@ const ToDoMaterialUI = () => {
     const handleButton = (event) => {
         event.preventDefault();
 
+        db.collection('itemList').add({
+            todo: item
+        })
+
         setItemList((prev) => [...prev, item]);
         setItem("");
     }
+
+    useEffect(() => {
+        db.collection('itemList').onSnapshot(snapshot => {
+            setItemList(snapshot.docs.map(doc => doc.data().todo));
+        })
+    }, []);
 
     return ( 
         <>
