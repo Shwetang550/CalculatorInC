@@ -28,6 +28,7 @@ const App = () => {
           <br />
           <h1> ToDo List App</h1>
           <br />
+          
           <input type="text" placeholder="Add Items" value={inputList} onChange={inputItem} />
           <button onClick={addItem}> + </button>
           

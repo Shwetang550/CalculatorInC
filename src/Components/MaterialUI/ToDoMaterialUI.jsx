@@ -11,10 +11,10 @@ const ToDoMaterialUI = () => {
         setItem(event.target.value);
     }
 
-    const handleButton = () => {
-        setItemList((prev) => {
-            return [...prev, item];
-        });
+    const handleButton = (event) => {
+        event.preventDefault();
+
+        setItemList((prev) => [...prev, item]);
         setItem(" ");
     }
 
@@ -26,10 +26,13 @@ const ToDoMaterialUI = () => {
                     <h1>ToDo List</h1>
                     <br />
 
-                    <input type="text" value={item} placeholder="Add items" onChange={handleInput} />
-                    <Button className="materialBtn" onClick={handleButton}> 
-                        <AddIcon fontSize="large"/>
-                    </Button>
+                    <form onSubmit={handleButton}>
+                        <input type="text" value={item} placeholder="Add items" onChange={handleInput} />
+                        
+                        <Button className="materialBtn" type="submit"> 
+                            <AddIcon fontSize="large" />
+                        </Button>
+                    </form>
 
                     <br />
                     <ol>
