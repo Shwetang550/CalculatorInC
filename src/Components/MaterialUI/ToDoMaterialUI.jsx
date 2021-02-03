@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import ItemList from './ToDoListMatUI';
 import db from '../../firebase';
+import firebase from 'firebase';
 
 const ToDoMaterialUI = () => {
     let [item, setItem] = useState("");
@@ -16,7 +17,8 @@ const ToDoMaterialUI = () => {
         event.preventDefault();
 
         db.collection('itemList').add({
-            todo: item
+            todo: item,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
 
         setItemList((prev) => [...prev, item]);
@@ -24,7 +26,7 @@ const ToDoMaterialUI = () => {
     }
 
     useEffect(() => {
-        db.collection('itemList').onSnapshot(snapshot => {
+        db.collection('itemList').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
             setItemList(snapshot.docs.map(doc => doc.data().todo));
         })
     }, []);
