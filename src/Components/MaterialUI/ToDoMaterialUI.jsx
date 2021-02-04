@@ -27,7 +27,7 @@ const ToDoMaterialUI = () => {
 
     useEffect(() => {
         db.collection('itemList').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
-            setItemList(snapshot.docs.map(doc => doc.data().todo));
+            setItemList(snapshot.docs.map(doc => ({id: doc.id, todo: doc.data().todo})));
         })
     }, []);
 
